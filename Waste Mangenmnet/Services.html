@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waste Management</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #fafafa;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            animation: fadeIn 2s ease-out;
+        }
+
+        header .logo img {
+            width: 50px;
+        }
+
+        nav ul {
+            list-style-type: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        #hero {
+            text-align: center;
+            padding: 100px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            animation: fadeIn 2s ease-out;
+        }
+
+        #hero h1 {
+            font-size: 3em;
+        }
+
+        #hero p {
+            margin: 20px 0;
+        }
+
+        #services {
+            text-align: center;
+            padding: 50px 20px;
+            animation: slideUp 2s ease-out;
+        }
+
+        .service-cards {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: #f4f4f4;
+            padding: 20px;
+            width: 30%;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1.5s ease-out;
+            transition: transform 0.3s ease;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            margin-bottom: 20px;
+        }
+
+        .card button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .card button:hover {
+            background-color: #555;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        #about, #contact {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #f9f9f9;
+            animation: fadeIn 2s ease-out;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Waste Management Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero" class="fade-in">
+        <h1>Join Us in Building a Cleaner Future</h1>
+        <p>Effective waste management for a sustainable environment.</p>
+        <button onclick="window.location.href='#services'">Learn More</button>
+    </section>
+
+    <section id="services" class="slide-up">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+            <div class="card">
+                <h3>Waste Collection</h3>
+                <p>We provide efficient waste collection services from your location. Our team ensures that waste is collected on time, helping you maintain a clean environment.</p>
+                <button onclick="window.location.href='#contact'">Get in Touch</button>
+            </div>
+            <div class="card">
+                <h3>Recycling Programs</h3>
+                <p>Join our recycling programs to help reduce environmental impact. We make it easy for you to recycle a variety of materials, contributing to a greener planet.</p>
+                <button onclick="window.location.href='#contact'">Get in Touch</button>
+            </div>
+            <div class="card">
+                <h3>Waste Disposal</h3>
+                <p>Our eco-friendly waste disposal methods ensure that waste is disposed of properly, minimizing the environmental impact. We follow strict guidelines for safe disposal.</p>
+                <button onclick="window.location.href='#contact'">Get in Touch</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="fade-in">
+        <h2>About Us</h2>
+        <p>We are committed to providing innovative and sustainable waste management solutions.</p>
+    </section>
+
+    <section id="contact" class="slide-up">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or want to collaborate, feel free to reach out!</p>
+        <button onclick="window.location.href='mailto:desktop555555874@gmail.com'">Contact Us</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Waste Management Solutions | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        // Optionally, add more interactivity or dynamic effects as needed
+    </script>
+</body>
+</html>
+s
